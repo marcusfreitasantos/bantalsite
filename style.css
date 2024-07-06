@@ -1,0 +1,1287 @@
+/*
+Theme Name: OceanWP Child
+Theme URI: httpss://oceanwp.org/
+Description: OceanWP WordPress theme example child theme.
+Author: Nick
+Author URI: httpss://oceanwp.org/
+Template: oceanwp
+Version: 1.0
+*/
+
+/* Parent stylesheet should be loaded from functions.php not using @import */
+
+
+/*ESTILO DO CURRÍCULO*/
+.resume_description{
+	font-size: 1.2em !important;
+}
+
+.categoria-de-curriculo-wrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	font-size: 1.2em;
+}
+
+.categoria-de-curriculo-wrap p{
+	margin: 0 !important;	
+}
+
+.categoria-de-curriculo-wrap .resume-category{
+	width: 50%;	
+}
+
+.categoria-de-curriculo-wrap:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/experiencia.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+.area-atuacao{
+	width: 50%;
+}
+
+.jmfe-custom-field-label{
+	color:#1C4E87;
+	text-transform: uppercase;
+	font-weight: 600;
+	line-height: 0.9em;
+}
+
+.jmfe-custom-field-wrap{
+	padding: 10px 0 !important;
+}
+
+.resume-mais-info .meta .jmfe-custom-field-wrap{
+	padding: 20px 0 !important;
+}
+
+.single-resume .meta li{
+	padding: 0 !important;
+}
+
+
+.candidate_photo{
+	width:auto !important;
+	height:200px!important;
+	margin-bottom:15px;
+}
+
+.single-resume-content h2{
+	padding-top:20px;
+	color:#1C4E87;
+	border-bottom: 1px #ccc solid;
+}
+
+.resume-manager-education{
+	border-top:none !important;
+	/*border-left: 2px #ccc solid;*/
+	padding:0 !important;
+}
+
+.resume-manager-experience{
+	border-top:none !important;
+	/*border-left: 2px #ccc solid;*/
+	padding:0 !important;
+}
+
+.resume_contact_button{
+	border-radius: 5px;
+}
+
+.date{
+	display:none!important;
+}
+
+.meta{
+	display:flex !important;
+	flex-direction: column !important;
+	justify-content:flex-start;
+	font-size: 1.2em !important;
+
+}
+
+
+.meta p{
+	line-height: 1.2em;
+	font-weight: 400;
+	text-align: justify;
+	/*border-left: 2px #ccc solid;*/
+	padding:10px !important;
+}
+
+
+.jmfe-custom-field-wrap:after{
+	content: none !important;
+} 
+
+.job-type:after {
+   content: none !important;
+}
+
+.detalhes{
+	padding:5px !important;
+	color: white;
+	background: #13375B;
+	border-radius: 5px;
+	transition: 500ms;
+	text-align: center;
+}
+
+.detalhes:hover{
+	background: #0B1E32;
+}
+
+.chosen-choices{
+	border-radius:5px !important;
+}
+
+.chosen-single{
+	height:40px !important;
+	background: none!important;
+}
+
+.single .thumbnail img{
+	width: 10%;
+}
+
+.single_job_listing .company {
+	display:none !important;
+}
+
+
+.meio-periodo, .freelance{
+	border-radius: 5px;;
+}
+
+
+.job-listing-meta .voluntario{
+	background:#EECF6D !important;
+	border-radius: 5px;;
+}
+
+.job_types .voluntario, .integral, .estagio{
+	background:none !important;
+}
+
+.job-listing-meta .integral{
+	background:#13375B !important;
+	border-radius: 5px;;
+}
+
+.job-listing-meta .estagio{
+	background:#45050C !important;
+	border-radius: 5px;;
+}
+
+.job_listings img {
+    max-width:40px !important;
+	max-height:40px !important;   
+    width: 100%!important;
+    height: auto!important;
+}
+
+
+.post-views{
+	padding: 10px;
+	background: #13375B;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-weight:600;
+	text-transform: uppercase;
+}
+
+
+.mensagem-de-erro{
+	padding: 15px;
+	font-weight: 300;
+	font-size:1.5em;
+	background: #931621;
+	text-align:center;
+	color:white;
+	margin: 40px 0 !important;
+	border-radius: 5px;
+	line-height:1.2em;
+}
+
+
+
+
+
+.content-area {
+	width: 100%;
+	
+}
+
+.single-resume-content{
+	display:flex;
+	flex-direction: row;
+	justify-content:space-between;
+	width:100%;
+}
+
+.resume_description{
+	width:40%;
+}
+
+.resume-mais-info{
+	width:50%;
+}
+
+.add-bookmark-wrapper{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+}
+
+h3:before{
+	content:none !important;	
+}
+
+dt, dd{	
+	border:none !important;	
+	padding: 10px !important;
+}
+
+h2{
+	border:none !important;	
+	padding: 0!important;
+}
+
+.product-thumbnail img{
+	width: 60px;
+}
+
+
+
+/*ADICIONANDO OS ÍCONES ANTES DE CADA INPUT FIELD*/
+
+#jmfe-wrap-candidate_nacionalidade:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/nacionalidade.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;
+}
+
+
+#jmfe-wrap-candidate_civil:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/estado-civil.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_filhos:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/filhos.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+#jmfe-wrap-candidate_idade:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/cursos.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+#jmfe-wrap-candidate_phone:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/telefone.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_celular:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/telefone.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_recados:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/telefone.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_mail:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/email.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_linkedin:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/linkedin.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+
+#jmfe-wrap-candidate_cnh:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/documentos.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_cpf:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/info-pessoal.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_rg:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/info-pessoal.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_formacao:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/formacao.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_idiomas{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding: 10px 0; 
+}
+
+#jmfe-label-candidate_idiomas:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/idiomas.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-label-candidate_idiomas{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+
+#jmfe-wrap-candidate_habilidades{
+	padding:5px 0 !important;
+}
+
+#jmfe-wrap-candidate_habilidades-multi-label{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#jmfe-wrap-candidate_habilidades-multi-label h2{
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+
+
+#jmfe-wrap-candidate_habilidades-multi-label:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/informatica.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-area_de_atuacao:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/experiencia.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_funcao:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/funcao.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_nivel:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/nivel.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-wrap-candidate_salario:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/salario.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-label-new_resume_content:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/documentos.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-label-new_resume_content{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+
+#jmfe-wrap-candidate_objetivos:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/objetivos-prof.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+#jmfe-label-candidate_objetivos{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+
+
+.campo-educacao{
+	margin-top: 60px;
+}
+
+.campo-educacao:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/formacao.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+.campo-experiencia{
+	margin-top: 60px;
+}
+
+
+.campo-experiencia:before{
+	content:"";
+	display: block;
+	background: url("https://bantal.com.br/wp-content/uploads/2019/10/experiencia.svg") no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin: 0 6px 0 0;  
+}
+
+
+.wp-job-manager-bookmarks-form .has-bookmark .remove-bookmark-wrapper {
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+}
+
+
+
+.btn-imprimir-wrap{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+
+
+/*BOTÃO PARA IMPRIMIR CURRÍCULO*/
+.btn-imprimir{
+	padding: 5px 20px !important;
+	background: #d48d31 ;
+	color: white;
+	font-weight: 600;
+	font-size: 1em;
+	border-radius: 5px;
+	border:none;
+	transition: 500ms;
+	margin: 10px 0;
+}
+
+
+body:not(.logged-in) .btn-imprimir-wrap {
+    display: none !important;		
+}
+
+body:not(.logged-in) .application_button{
+	display: none !important;
+}
+
+
+
+
+.nome_do_candidato{
+	display: none;
+	font-size: 36px;
+	font-weight: 600;
+	color: #13375b;
+	line-height: 1em;
+	padding: 20px 0 !important;
+}
+
+
+/*ESTILO PARA AS PÁGINAS DAS VAGAS*/
+.job-listing-meta{
+	display: flex !important;
+	flex-direction: row !important;
+	padding: 20px 0 !important;
+	border-bottom: 2px solid #13375b;
+}
+
+.jmfe-custom-field-wrap {
+	font-size: 1.2em;	
+}
+
+.job_description p{
+	padding: 20px 0 !important;
+	font-size: 1.2em;
+	line-height: 1.2em;
+}
+
+.application_button{
+	font-size: 1em !important;
+	padding: 20px 15px !important;
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*CABEÇALHO INÍCIO*/
+body:not(.logged-in) .btn-logout {
+    display: none !important;		
+}
+
+.btn-logout span.text-wrap{
+	background-color: white !important;
+	font-weight: 500 !important;
+	color: #54bbab !important;
+	border: 2px #54bbab solid;	
+}
+
+body:not(.logged-in) .btn-entrar {
+    display: block !important;		
+}
+
+.btn-entrar{
+	display: none;
+}
+
+.btn-entrar span.text-wrap{
+	background-color: white !important;
+	font-weight: 500 !important;
+	color: #54bbab !important;
+	border: 2px #54bbab solid;	
+}
+
+.btn-login span.text-wrap, .btn-cadastro span.text-wrap{
+	background: none !important;
+	color: white !important;
+	border: none !important;
+}
+
+#site-header-inner{
+	z-index: 999999;
+}
+
+/*
+.btn-logout{
+	background: #238680 !important;
+	text-align:center;
+}
+*/
+
+.btn-curriculo{
+	display:none !important;
+}
+
+.logged-in .btn-curriculo{
+	display:block !important;
+}
+
+dd{
+	padding:0 !important;
+	margin:0 !important;
+}
+
+dd p{
+	margin:0!important;
+	line-height: 1.3em !important;
+	font-size: 1.2em !important;
+}
+
+.resume_description p{
+	margin:0!important;
+	line-height: 1.3em !important;
+}
+
+dt{
+	margin: 15px 0 0 0 !important;
+	padding: 0 !important;
+}
+
+#jmfe-wrap-candidate_idiomas p{
+	margin:0 !important;
+	padding: 10px 0 !important;
+}
+
+#jmfe-label-candidate_idiomas{
+	margin:0!important;
+}
+
+#jmfe-wrap-candidate_objetivos p{
+	padding: 10px 0!important;
+	margin: 0!important;
+}
+
+/*
+.btn-cadastro{
+	background: #238680;	
+	text-align:center;	
+	text-transform: uppercase;
+}
+*/
+
+.logged-in .btn-login {
+    display: none !important;
+}
+
+
+body:not(.logged-in) #btn-acesso-painel{
+	display:none;
+}
+
+.logged-in .btn-cadastro{
+	display: none !important;
+}
+
+tr .candidate-title{
+	display: none;
+}
+
+tr .candidate-location{
+	display: none;
+}
+
+tr .resume-category{
+	text-align: right;
+}
+
+.woocommerce-MyAccount-navigation-link--dashboard{
+	display: none!important;
+}
+
+
+
+#site-header {
+	box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between!important;
+}
+
+#site-navigation{
+	display:flex;
+	flex-direction:row;
+}
+
+#site-logo #site-logo-inner a:hover img {
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    opacity: 1;
+}
+
+.btn span.text-wrap{
+		font-weight:500!important;
+	padding: 10px 15px!important
+}
+
+.educacao span.text-wrap{
+	background-color: white !important;
+	color: #D48D31 !important;
+	border: 2px #D48D31 solid;	
+}
+
+.educacao span.text-wrap:hover{
+	background-color: #D48D31 !important;
+	color: white !important;
+	border: 2px #D48D31 solid;	
+}
+
+.candidatos span.text-wrap{
+	background-color: white !important;
+	font-weight: 500 !important;
+	color: #54bbab !important;
+	border: 2px #54bbab solid;	
+}
+
+.candidatos span.text-wrap:hover{
+	background-color: #238680 !important;
+	color: white !important;
+	border: 2px #238680 solid;	
+}
+
+
+.empresas span.text-wrap{
+	background-color: white !important;
+	font-weight: 500 !important;
+	color: #13375B !important;
+	border: 2px #13375B solid;	
+}
+
+.empresas span.text-wrap:hover{
+	background-color: #13375B !important;
+	color: white !important;
+	border: 2px #13375B solid;	
+}
+
+
+
+/*BARRA DE PESQUSIAR CATEGORIAS NA PÁGINA DE CURRÍCULOS*/
+.select2{
+	width: 100%!important;
+	background: none!important; 	
+}
+
+.select2-selection{
+	border:1px #ccc solid!important;	border-radius:10px;	background:none!important;
+	height:40px!important;
+}
+
+
+.resume-aside{
+	display:flex!important;
+	flex-direction:row!important;
+	justify-content:space-between;
+	align-content:center;
+	align-items:center;
+	padding: 20px!important;
+}
+
+#menu-menu-primario{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between!important;
+}
+
+/*ESCONDER TÍTULO NA PÁGINA DE ESCOLHER ASSINATURAS
+.package-section{
+	display: none;
+}
+*/
+
+/*ESCONDER CHECKBOX DO CHECKOUT*/
+
+#candidate_checkbox_wrap{
+	display:none;
+}
+
+
+
+/*MENU HAMBURGER*/
+.sf-menu ul.sub-menu {
+	text-align:center;
+	left: -100%;;
+}
+
+/*
+#searchform-dropdown input {
+	background-color: #e6e6e6 !important;
+	padding: 5px 20px;	
+	border:none;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	visibility: visible !important;
+	opacity: 1 !important;
+
+}
+
+
+#searchform-dropdown{
+	background-color: white !important;
+	padding: 0px;
+	width: 100%;
+	position:absolute;
+	right:110%;
+	top: 22%;	
+	box-shadow: none !important;
+	visibility: visible !important;
+	opacity: 1 !important;
+}
+
+.search-toggle-li{
+	right:100%;
+	z-index:99999;
+	top: 2%;	
+
+}
+
+.search-toggle-li span{
+	font-size:16px;
+	font-weight:600 !important;
+	background-color: #ccc;
+	color: #1d4f88;
+	padding: 12px;
+	top: 25%;	
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+*/
+/*CABEÇALHO FIM*/
+
+
+
+
+/*WP FORMS INÍCIO*/
+
+.btn-contato-enviar{
+	border:none !important;
+	font-size:14px !important;
+}
+
+/*WP FORMS FIM*/
+
+
+
+/*MAILCHIMP FORM INÍCIO*/
+.mailchimp-bantal{
+	width:100% !important;
+	font-size:14px !important;
+	background-color: #54bbab!important;
+	border-radius:5px;
+	text-align:center;
+	border: 2px #54bbab solid!important;
+}
+
+.mailchimp-bantal a{
+	text-decoration:none!important;
+	color:white;
+	font-weight:600;
+}
+
+.mailchimp-bantal-login{
+	width:100% !important;
+	font-size:14px !important;
+	background: none!important;
+	border-radius:5px;
+	text-align:center;
+	color:#54bbab!important;
+	border: 2px #54bbab solid!important;
+}
+
+.mailchimp-bantal-login:hover{
+	background-color: #54bbab!important;
+	color:white!important;
+}
+
+.mailchimp-bantal:hover{
+	background-color: #238680!important;
+	border: 2px #238680 solid!important;
+}
+
+
+.labelcontainer{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width:100% !important;
+	padding: 3px 0;
+}
+
+.radiosim{
+	padding: 0px 60px;
+}
+
+.radionao{
+	padding:0px  20px;
+}
+
+
+.campos-grupo-lista {
+	width:100%;
+	margin: 3px 0px;
+}
+
+.campos-grupo{
+	display: flex; flex-direction: row;
+	justify-content:space-between;
+	align-items:stretch;
+}
+
+.campo{
+	width:100%;
+	padding:0px 3px;
+}
+
+.form-bantal{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	align-content:center;
+}
+
+.campos-grupo input{	
+	padding: 10px 20px!important;
+	margin:3px 0px;
+}
+
+.formfield{
+	border-radius:5px !important;
+	margin:0px!important;
+}
+
+
+
+@media (max-width: 768px){
+	.labelcontainer{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width:100% !important;
+	padding: 20px 0;
+	}
+	
+
+	.radiosim{
+	padding: 0px 30px;
+	}
+
+.radionao{
+	padding:0px 30px;
+	}
+	
+	.campos-grupo{
+	display: flex; flex-direction: column;
+}
+
+/*ESCSONDER BOTÃO SOBRE O PAYPAL*/
+.woocommerce-checkout #payment .payment_method_paypal .about_paypal {
+	display: none !important;
+}
+
+}
+/*MAILCHIMP FORM FIM*/
+
+/*WOOCOMMERCE*/
+.woocommerce ul.products li.product .button {
+  width:100% !important;  
+	padding: 30px 0px !important; 
+    font-size: 24px!important;
+}
+
+/*POSTS*/
+.wp-block-button a{
+	border-radius: 5px!important;
+}
+
+.wp-block-button a:hover{
+	background-color:#ee9521!important;
+}
+
+
+
+/*ESTILOS PARA A PÁGINA ONDE O USUÁRIO ESCOLHE O PACOTE DE ASSINATURAS
+ul.resume_packages li{
+	display: flex;
+	align-items: center;
+}
+
+
+.resume-package{
+	border-radius: 10px;
+	padding: 0 !important;
+	margin: 10px 0 !important;
+	background: white !important;
+	
+}
+
+.resume-package .subscription-details{
+	display:none !important;
+}
+
+
+.resume-package .amount{
+	font-size: 3.5em;
+	font-weight: 600;
+	padding: 0 100px;
+	margin: 0!important;
+	text-align:center;
+	color: #47baa4;
+}
+
+
+ul.resume_packages li input{
+	display: none;
+}
+
+
+ul.resume_packages li label{
+	padding: 24px 15px;
+	width: 30%;
+	font-size:2.5em;
+	background: #eee;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 0!important;
+}
+
+
+.pacote-bantal-info{
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-between;
+	width: 70%;
+	height: 100%;
+	text-align:center;
+	
+}
+
+
+.btn-assinar-bantal{
+	cursor: pointer;
+	font-size: 1.5em;
+	font-weight: 500;
+	padding: 40px 32px;
+	background: #47baa4;
+	color: white;
+	width: 100%;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	transition: 0.3s;
+}
+
+.btn-assinar-bantal:hover{
+	background: #238680;
+	color:white;
+}
+
+.job_listing_packages_title{
+	display:none;
+}
+
+.job_listing_packages, .resume_packages{
+	border:none !important;
+}
+
+.package-section{
+	font-size: 1.5em;
+	font-weight:400;
+	border-bottom:1px solid #ccc;
+	color: #808080;
+	padding: 24px 0;
+	text-align: center;
+}
+
+#enviar-curriculo{
+	float:right;
+}
+*/
+
+/*BOTÃO "DEFICIÊNCIA" DO FORMULÁRIO DO MAILCHIMP PROS CANDIDATOS*/
+.campo-pcd{
+	display: flex!important;
+	flex-direction: row!important;
+	justify-content: space-between!important;
+	align-items: center!important;
+	align-content:center!important;
+	margin-top: 2px;
+}
+
+.campo-pcd p{
+	margin: 0 !important;
+}
+
+.campo-pcd .mailchimp-bantal-login{
+	padding: 4px 30px !important;
+	font-size: 1em!important;
+	font-weight: 400 !important;
+}
+
+
+.woocommerce-additional-fields h3{
+	display: none!important;
+}
+
+/*UPLOAD FILE CHECKOUT*/
+.alg_checkout_files_upload_button{
+	border-radius: 5px;
+	background: #1d4f88;
+}
+
+.alg_checkout_files_upload_button:hover{
+	border-radius: 5px;
+	background: #13375b;
+}
+
+.upload-label td label{
+	font-size: 1.2em !important;
+	font-weight: 300 !important;
+}
+
+#upload-pcd td{
+	padding: 5px!important;
+}
+
+#upload-pcd tbody{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+}
+
+#upload-pcd{
+	display: none;
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+/*CSS QUE PREPARA A PORRA DO CURRÍCULO PARA IMPRESSÃO*/
+@media print {
+		
+	/** Setting margins */       
+	@page { margin: 0.5cm }	
+
+
+    html, body {
+        margin: 0 !important;
+        padding: 0 !important;
+		border: 0 !important;
+		font-size: 12px !important;
+		font-family: Arial, Helvetica, sans-serif !important;;
+	}
+
+	body {zoom: 95%;}
+
+
+	#site-header-inner, .wp-job-manager-bookmarks-form, .post-views, footer {
+		display: none !important;
+	}
+
+	.nome_do_candidato{
+		font-size: 24px !important;
+		font-weight: 600 !important;
+		display: block !important;
+	}
+
+
+	#resume-mais-info, .resume_description, .meta, .campo-educacao, .resume-manager-education, .campo-experiencia, .resume-manager-experience, h3, h2, p, dd, dt, dl{
+		font-size:12px !important;
+		padding: 0 !important;	
+	}
+
+	.candidate_photo{
+		width:100px!important;
+		height: 100px!important;
+	}
+}
