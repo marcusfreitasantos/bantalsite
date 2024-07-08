@@ -43,6 +43,7 @@ function registerUsersFromApp(){
 		}else{
             $newUser = get_user_by("ID", $newUserId);
 			wp_update_user( array( 'ID' => $newUserId, 'first_name' => $userFirstName ) );
+			update_user_meta($newUserId, "billing_first_name", $userFirstName);
 
             if($userCpf){
 			    update_user_meta($newUserId, "billing_cpf", $userCpf);
