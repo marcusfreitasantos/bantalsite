@@ -63,12 +63,14 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .company__header_logo img {
   width: 100%;
   margin: auto;
   object-fit: contain;
+  max-height: 200px;
 }
 
 .company__header_info_wrapper {

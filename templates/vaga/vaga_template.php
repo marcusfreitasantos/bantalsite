@@ -100,6 +100,28 @@
 
 ?>
 
+<?php
+    function changeVacancyFieldNameBasedOnVacancyID($fieldName){
+        $vacancyId= get_query_var( 'vaga_id' );
+
+        if($vacancyId === "40"){
+            $fieldName = "Atendimento ao Cliente";
+        }
+
+        return $fieldName;
+    }
+
+    function changeVacancyQuantBasedOnVacancyID($quantity){
+        $vacancyId= get_query_var( 'vaga_id' );
+        
+        if($vacancyId === "40"){
+            $quantity = "6";
+        }
+
+        return $quantity;
+    }
+?>
+
 
 <?php
     function pageTitle() {   
@@ -140,7 +162,7 @@
                 <div class="vacancy__header">
                     <h4 class="vacancy__title"><?php echo $vacancyDetails[0] -> tituloVaga; ?></h4>
                     <div class="vacancy__metaData">
-                        <div class="vacancy__metaData_item"><i class="fa-solid fa-suitcase"></i> <span class="vacancy__area"> <?php echo $vacancyDetails[0] -> areaAtuacao; ?></span></div>
+                        <div class="vacancy__metaData_item"><i class="fa-solid fa-suitcase"></i> <span class="vacancy__area"> <?php echo changeVacancyFieldNameBasedOnVacancyID($vacancyDetails[0] -> areaAtuacao); ?></span></div>
                         <div class="vacancy__metaData_item"><i class="fa-solid fa-calendar"></i> <span class="vacancy__date"> <?php echo $vacancyDetails[0] -> dataVaga; ?> </span></div>
                         <div class="vacancy__metaData_item"><i class="fa-solid fa-location-dot"></i> <span class="vacancy__local"> <?php echo $vacancyDetails[0] -> localizacaoVaga; ?></span></div>
                     </div>
@@ -196,7 +218,7 @@
                             <h4 class="company_card_title"><?php echo $companyName; ?></h4>
 
                             <div class="company_card_subtitle">
-                                <span>Vagas: <strong class="company__vacancies"><?php echo $companyData[0] -> quantidade; ?></strong></span>
+                                <span>Vagas: <strong class="company__vacancies"><?php echo changeVacancyQuantBasedOnVacancyID($companyData[0] -> quantidade); ?></strong></span>
                             </div>
 
                             <div class="btn__primary">
