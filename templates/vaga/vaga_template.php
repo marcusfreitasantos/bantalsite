@@ -199,7 +199,7 @@
 
                     <div class="btn__group_wrapper">
                         <div class="btn__primary">
-                            <a class="btn__link company__profile_btn" href="<?php echo $siteUrl; ?>/carrinho/?add-to-cart=2418" target="_blank">Crie sua Conta</a>
+                            <a class="btn__link company__profile_btn" href="https://recrutamento.bantal.com.br/cadastro" target="_blank">Crie sua Conta</a>
                         </div>
                         <div class="btn__primary">
                             <a class="btn__link company__profile_btn" href="https://recrutamento.bantal.com.br/auth/login" target="_blank">Fazer Login</a>
